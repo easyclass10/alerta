@@ -7,8 +7,8 @@ import os  # Para leer variables de entorno
 purchases = {
     'VOO.CL': 2314000,    # Ejemplo: precio de compra para NU
     'NVDA.CL': 726000, # Ejemplo: precio de compra para TSLA
-    'META.CL': 3140000  #Ejemplo: precio de compra para MSFT
-    #'AMDVASCCO.CL': 
+    'META.CL': 3140000, #Ejemplo: precio de compra para MSFT
+    'AMDVASCCO.CL': 15160
 }
 
 # --- Función para obtener el valor del dólar usando yfinance ---

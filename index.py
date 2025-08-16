@@ -5,9 +5,10 @@ import os  # Para leer variables de entorno
 
 # --- Diccionario con precios de compra de las acciones ---
 purchases = {
-    'NU': 10.0,    # Ejemplo: precio de compra para NU
-    'TSLA': 200.0, # Ejemplo: precio de compra para TSLA
-    'MSFT': 300.0  # Ejemplo: precio de compra para MSFT
+    'VOO.CL': 10.0,    # Ejemplo: precio de compra para NU
+    'NVDA.CL': 200.0, # Ejemplo: precio de compra para TSLA
+    'META.CL': 300.0  # Ejemplo: precio de compra para MSFT
+    #'AMDVASCCO.CL': 
 }
 
 # --- Función para obtener el valor del dólar usando yfinance ---

@@ -18,7 +18,7 @@ def obtener_tasa_usd_cop():
     if data.empty:
         raise ValueError("No se pudo obtener la tasa USD/COP")
     tasa_cop_usd = data["Close"].iloc[-1]  # COP por USD
-    return 1 / tasa_cop_usd if tasa_cop_usd != 0 else None  # Invertir para USD a COP
+    return tasa_cop_usd  # Invertir para USD a COP
 
 # --- Función para obtener el precio actual de una acción ---
 def obtener_precio_actual(ticker_symbol):
@@ -74,7 +74,7 @@ if __name__ == "__main__":
         mensaje = f"Alerta:\n\nDólar {usd_cop:.2f} COP\n"
         for ticker, cambio in cambios.items():
             signo = '+' if cambio >= 0 else '-'
-            mensaje += f"{ticker}: {signo}{abs(cambio):.0f}%\n"
+            mensaje += f"{ticker}: {signo}{abs(cambio):.2f}%\n"
         
         asunto = "Alerta de Acciones y Dólar"
         

@@ -8,7 +8,11 @@ purchases = {
     'VOO.CL': 2314000,    # Ejemplo: precio de compra para NU
     'NVDA.CL': 726000, # Ejemplo: precio de compra para TSLA
     'META.CL': 3140000, #Ejemplo: precio de compra para MSFT
-    'AMDVASCCO.CL': 15160
+    'AMDVASCCO.CL': 15160,
+    'XPON': 5.188,
+    'CRGO': 3.265,
+    'BTDR': 13.52,
+    'ETH-USD': 4750
 }
 
 # --- Función para obtener el valor del dólar usando yfinance ---
